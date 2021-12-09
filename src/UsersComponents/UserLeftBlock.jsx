@@ -4,9 +4,9 @@ import Logo from "../Pages/HeaderComponent/Logo";
 const UserLeftBlock = () => {
   return (
     <div className="userLeftBlock">
-      <main>
+      {/* <main>
         <Logo />
-      </main>
+      </main> */}
       <ul>
         <li>
           <a href="">

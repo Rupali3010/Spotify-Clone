@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from "react";
 
 import firebase from "../firebase";
 
-export let AuthContextApi = createContext(null);
+export let AuthContextApi = createContext("");
 
 const AuthProvider = ({ children }) => {
   let [state, setState] = useState(null);

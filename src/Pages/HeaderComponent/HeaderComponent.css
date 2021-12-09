@@ -6,7 +6,7 @@
 
 #spotify-headerBlock > nav {
   height: 80px;
-  width: 80%;
+  width: 97%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -60,4 +60,19 @@
 
 .spotifyMenu nav ul li a:hover {
   color: #1ed760;
+}
+
+.profile_img {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  background: #413f3f;
+  padding: 4px 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+.profile_img img {
+  width: 25px;
+  margin: 0px 11px 0 0;
 }

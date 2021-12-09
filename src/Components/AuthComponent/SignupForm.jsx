@@ -44,6 +44,11 @@ const SignupForm = ({ history }) => {
         let confirmMessage = `A verification message has been sent to ${email} please verify and login`;
         USER_DATA.user.sendEmailVerification();
         toast.info(confirmMessage);
+        USER_DATA.user.updateProfile({
+          displayName: profile_name,
+          photoURL:
+            "https://www.hopkinsmedicine.org/profiles/Resources/Images/physician-placeholder.png",
+        });
         toast.success("successfully user registered");
         history.push("/login");
       } else {
