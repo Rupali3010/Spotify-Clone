@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Varela&family=Varela+Round&display=swap");
+#spotify-headerBlock {
+  background-color: #000;
+  height: 80px;
+}
+
+#spotify-headerBlock > nav {
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.spotifyLogo svg {
+  width: 135px;
+  height: 100%;
+  fill: #fff;
+}
+
+.spotifyLogo {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.spotifyMenu {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.spotifyMenu nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.spotifyMenu nav ul li a {
+  padding: 28px 17px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.spotifyMenu nav ul li a:nth-child(1),
+.spotifyMenu nav ul li a:nth-child(2),
+.spotifyMenunav ul li a:nth-child(3) {
+  font-family: bold;
+}
+
+.bar {
+  height: 20px;
+  width: 1px;
+  padding: 0px;
+  margin: 32px 20px;
+  background: #fff;
+  display: inline-block;
+}
+
+.spotifyMenu nav ul li a:hover {
+  color: #1ed760;
+}

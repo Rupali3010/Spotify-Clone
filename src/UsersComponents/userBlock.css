@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  font-family: "varela Round ", sans-serif;
+}
+#userBlock {
+  height: 100vh;
+}
+#userBlock article {
+  height: 100vh;
+  display: flex;
+}
+
+.userLeftBlock {
+  background-color: #000;
+  flex-basis: 20%;
+}
+.userLeftBlock main a {
+  fill: white;
+}
+.userLeftBlock main a svg {
+  margin: 12px 12px;
+  padding: 10px;
+  width: 150px;
+}
+.userLeftBlock ul li {
+  list-style: none;
+}
+.userLeftBlock ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-transform: none;
+  padding: 24px;
+}
+.userLeftBlock ul li a svg {
+  fill: white;
+  margin: 16px 8px -8px 10px;
+}
+
+.secondDiv {
+  margin-left: 35px;
+  margin-top: 24px;
+}
+#createButton {
+  padding: 2px 4px;
+  background: lightgray;
+  border: none;
+}
+#createButton svg {
+  height: 13px;
+  width: 13px;
+  margin-top: 2px;
+}
+
+.Heartblock {
+  margin-top: 22px;
+  cursor: pointer;
+  margin-left: 35px;
+  font-size: 15px;
+  color: "#B3B3B3";
+  border: none;
+  padding: 3px 6px;
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  border-radius: 1px;
+}
+
+.Heartblock svg {
+  fill: white;
+}
+.userRightBlock {
+  background-color: #121212;
+  flex-basis: 80%;
+}
+
+.userLeftBlock ul li a:hover {
+  color: white;
+  background-color: lightgray;
+  
+}
