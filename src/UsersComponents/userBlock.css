@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-* {
-  font-family: "varela Round ", sans-serif;
-}
 #userBlock {
   height: 100vh;
 }
-#userBlock article {
+#userBlock > article {
   height: 100vh;
   display: flex;
 }
@@ -34,6 +30,8 @@
   line-height: 35px;
   text-transform: none;
   padding: 24px;
+  /* height: 50px;
+  width: 100px; */
 }
 .userLeftBlock ul li a svg {
   fill: white;
@@ -75,8 +73,25 @@
   flex-basis: 80%;
 }
 
-.userLeftBlock ul li a:hover {
-  color: white;
-  background-color: lightgray;
-  
+.userLeftBlock ul li a span:hover {
+  /* width: 100%;
+  background-color: rgb(82, 80, 80); */
+}
+
+.userLeftBlock #line {
+  border: 1px solid #7a7a7a;
+  width: 210px;
+  margin: 12px;
+}
+
+.userLeftBlock .parentp {
+  position: relative;
+  top: 196px;
+}
+
+.userLeftBlock .parentp .childp {
+  position: absolute;
+  align-items: center;
+  padding-left: 39px;
+  cursor: pointer;
 }

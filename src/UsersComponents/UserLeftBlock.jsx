@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Pages/HeaderComponent/Logo";
+import { Link } from "react-router-dom";
 
 const UserLeftBlock = () => {
   return (
@@ -9,7 +9,7 @@ const UserLeftBlock = () => {
       </main> */}
       <ul>
         <li>
-          <a href="">
+          <Link to="/userHome/music-home">
             <svg
               role="img"
               height="24"
@@ -24,7 +24,7 @@ const UserLeftBlock = () => {
             >
               Home
             </span>
-          </a>
+          </Link>
         </li>
         <li>
           <a href="">
@@ -65,7 +65,7 @@ const UserLeftBlock = () => {
       </ul>
 
       <div className="secondDiv">
-        <button id="createButton">
+        <Link to="/userhome/create-play-list" id="createButton">
           <svg
             role="img"
             height="12"
@@ -77,7 +77,7 @@ const UserLeftBlock = () => {
             <path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path>
             <path fill="none" d="M0 0h16v16H0z"></path>
           </svg>
-        </button>
+        </Link>
 
         <span
           className="span"
@@ -103,6 +103,23 @@ const UserLeftBlock = () => {
       <span style={{ fontSize: "14px", color: "#b3b3b3", marginLeft: "15px" }}>
         Liked Songs
       </span>
+
+      <div>
+        <p id="line"></p>
+        <p style={{ color: "#fff", margin: "11px" }}>My PlayList #1</p>
+        <div className="parentp">
+          <p
+            style={{ color: "#fff", margin: "11px", top: "25px" }}
+            className="childp"
+          >
+            <i
+              className="far fa-arrow-circle-down"
+              style={{ padding: "2px" }}
+            ></i>
+            Install App
+          </p>
+        </div>
+      </div>
     </div>
 
     // second part

@@ -36,10 +36,12 @@
 
 .orBlock {
   border-bottom: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px;
   width: 25%;
-  margin: 12px auto;
+  /* margin: 85px auto; */
   position: relative;
+  /* left: 45px; */
+  margin-left: 620px;
 }
 
 .orBlock strong {
@@ -157,6 +159,7 @@ input[type="email"] {
 .accountBlock {
   text-align: center;
 }
+
 /* Login Page CSS */
 .authContent1 h4 {
   text-align: center;
@@ -198,6 +201,7 @@ input[type="email"] {
   color: #5c5c5c;
   cursor: pointer;
   background: #fff;
+  text-decoration: none;
 }
 .authContent1 #two:hover,
 .authContent1 #three:hover,
@@ -270,4 +274,31 @@ input[type="email"] {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
+}
+
+#four {
+  text-decoration: none;
+}
+
+/* OTP page */
+.logoBlock {
+  height: 150px;
+  width: 200px;
+  margin-left: 645px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputField label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.inputField input {
+  width: 425px;
+  height: 40px;
 }

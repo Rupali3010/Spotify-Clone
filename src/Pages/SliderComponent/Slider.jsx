@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Slider3 from "./Slider3";
 import "./sliderComponent.css";
 import SpofifyWrapper from "./SpofifyWrapper";
@@ -41,6 +42,14 @@ const Slider = () => {
         <article>
           <div className="spotify-Block">
             <Slider3 />
+          </div>
+        </article>
+      </section>
+
+      <section className="wrapped-block">
+        <article>
+          <div className="spotify-Block">
+            <Footer />
           </div>
         </article>
       </section>

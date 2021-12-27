@@ -1,0 +1,109 @@
+#profileBlock header {
+  height: 30vh;
+  max-height: 500px;
+  min-height: 270px;
+  width: 100%;
+  background: #5a5a5a40;
+  display: flex;
+  align-items: center;
+}
+
+#profileBlock header figure {
+  flex-basis: 25%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#profileBlock header figure img {
+  width: 91%;
+  border-radius: 100%;
+  height: 250px;
+}
+
+#profileBlock header aside {
+  flex-basis: 75%;
+}
+
+#profileBlock header aside h5 {
+  font-size: 15px;
+  color: #fff;
+  margin: 73px 0 0 0;
+  font-weight: 100;
+}
+
+#profileBlock header aside h1 {
+  font-size: 6em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#profileBlock header figure:hover ._editIcon {
+  filter: drop-shadow(2px 4px 6px black);
+  display: block;
+}
+
+._editIcon {
+  position: absolute;
+  display: none;
+  color: #fff;
+  margin: 50px;
+}
+
+._editIcon i {
+  display: block;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#photo_upload_block article {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* margin-top: 100px; */
+  flex-direction: column;
+}
+
+#photo_upload_block ._block {
+  color: #fff;
+  text-align: center;
+  width: 500px;
+  background: #282828;
+  padding: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+._block h1 {
+  font-size: 30px;
+  padding: 35px;
+}
+
+._block form button {
+  font-size: 14px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+#progressSection > article {
+  display: flex;
+}
+
+#progressSection > article span:nth-child(1) {
+  flex-basis: 95%;
+}
+
+#progressSection > article span:nth-child(2) {
+  flex-basis: 5%;
+}
+
+progress {
+  width: 100%;
+}

@@ -9,9 +9,17 @@ import Signup from "./Components/AuthComponent/Signup";
 import PageNotFound from "./Pages/PageNotFound";
 import { AuthContextApi } from "./Apis/AuthContext";
 import UserHome from "./UsersComponents/UserHome";
+import MyFirstPoral from "./Pages/MyFirstPoral";
+import Spinner from "./Pages/Spinner/Spinner";
+import ProtectedRoute from "./Helper/ProtectedRoute";
+import PublicRoute from "./Helper/PublicRoute";
+import PasswordReset from "./Components/AuthComponent/PasswordReset";
+import PhoneAuth from "./Components/AuthComponent/PhoneAuth";
+import CreatePlayList from "./Components/AudioComponent/CreatePlayList";
+import OtpVerify from "./Components/AuthComponent/OtpVerify";
 
 const App = () => {
-  let USER = useContext(AuthContextApi);
+  let AUTH = useContext(AuthContextApi);
   return (
     <section id="SpotifyMainBlock">
       <article>
@@ -21,24 +29,33 @@ const App = () => {
           </header>
           {/* <header>{!USER ? <Navbar /> : "loading"}</header> */}
           <ToastContainer />
+          {/* <MyFirstPoral /> */}
           <main>
             {/* dynamic routing starts here */}
             <Switch>
-              <Route path="/" exact>
+              <PublicRoute path="/" exact>
                 <Home />
-              </Route>
-              <Route path="/login" exact>
+              </PublicRoute>
+              <PublicRoute path="/login" exact>
                 <Login />
-              </Route>
-              <Route path="/signup" exact>
+              </PublicRoute>
+              <PublicRoute path="/signup" exact>
                 <Signup />
-              </Route>
+              </PublicRoute>
+              <PublicRoute path="/password-reset">
+                <PasswordReset />
+              </PublicRoute>
 
-              {/* Authenticated Block Starts */}
-              <Route path="/userHome">
-                <UserHome />
-              </Route>
-              {/* Authenticated Block Ends */}
+              <PublicRoute path="/phone-auth">
+                <PhoneAuth />
+              </PublicRoute>
+
+              {/* React Router 4 version Syntax but it is supporting 5 also*/}
+              <ProtectedRoute path="/userHome" component={UserHome} />
+              {/* <ProtectedRoute
+                path="/create-play-list"
+                component={CreatePlayList}
+              /> */}
 
               <Route path="*">
                 <PageNotFound />
